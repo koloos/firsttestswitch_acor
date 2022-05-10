@@ -1,0 +1,10 @@
+export const ReseauxData = [
+	{ to: 'https://www.facebook.com/acoremploi/',
+    text: 'Facebook' },
+    {to: 'https://twitter.com/acor_emploi',
+    text: 'Twitter'},
+	{ to: 'https://www.instagram.com/acor_emploi/',
+    text: 'Instagram' },
+	{ to: 'https://fr.linkedin.com/company/action-pour-le-conseil-et-recrutement',
+    text: 'LinkedIn' },
+];

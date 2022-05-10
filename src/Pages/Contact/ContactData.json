@@ -1,0 +1,28 @@
+[
+    {
+        "ville": "Pamiers", 
+        "image": "./img/dpt/Pamiers-09.png", 
+        "telephone": "05 35 53 60 26", 
+        "adresse": "66 Bd. Alsace Lorraine 09100 Pamiers"
+    },
+    {
+        "ville": "Vic Fezensac", 
+        "image": "./img/dpt/vic-fezensac-09.png", 
+        "telephone": "05 59 82 82 02", 
+        "adresse": "18 rue des cordeliers 32190 Vic-Fezensac"},
+    {
+        "ville": "Tonneins", 
+        "image": "./img/dpt/tonneins-47.png", 
+        "telephone": "05 59 82 82 02", 
+        "adresse": "54 rue Gambetta 47400 Tonneins"},
+    {
+        "ville": "Pau", 
+        "image": "./img/dpt/pau-64.png", 
+        "telephone": "05 59 82 82 02", 
+        "adresse": "15 av. Jean Mermoz 64000 Pau"},
+    {
+        "ville": "Tarbes", 
+        "image": "./img/dpt/tarbes-65.png", 
+        "telephone": "05 62 51 04 06", 
+        "adresse": "43 rue du Corps Franc Pommies 65000 Tarbes"}
+]
