@@ -147,6 +147,31 @@ export const Row5 = styled.div`
         font-weight: 300;
         color: rgb(90, 90, 90);
     }
+
+    .radio{
+        display: block;
+        box-shadow: none;
+        color: white;
+        padding: 2px;
+        cursor: pointer;
+
+        &::after{
+            border-radius: 50%;
+            padding: 2px;
+            border: 2px solid rgb(180, 180, 180);
+            background: rgb(180, 180, 180);
+        }
+
+        &:hover{
+            color: rgb(180, 180, 180);
+            background: rgb(180, 180, 180);
+        }
+
+        &:checked{
+            border: 2px solid rgb(90, 188, 58);
+            background: rgb(90, 188, 58);
+        }
+    }
 `;
 
 export const Row6 = styled.div`
@@ -174,6 +199,17 @@ export const Row6 = styled.div`
         color: rgb(90, 188, 58);
         background: white;
         border: 4px solid rgb(90, 188, 58)
+    }
+
+    label{
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+
+    input{
+        border: none;
+        box-shadow: none;
     }
 `;
 

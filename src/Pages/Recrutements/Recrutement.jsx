@@ -1,13 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { Container} from '../GlobalStyle';
+import { Container } from '../../GlobalStyle';
+import Axios from 'axios';
 
 
 function Recrutement() {
+
+   const [offre, setOffre] = useState('');
+   const [evenement, setEvenement] = useState('');
+
   return (
     <>
     <Container>
     <CoverRecrutement />
+    <div onChange={(e)=>{
+      setOffre(e.target.value);
+    }}>
+
+    </div>
   </Container>
   </>
   )

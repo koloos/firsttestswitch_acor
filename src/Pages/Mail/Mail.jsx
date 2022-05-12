@@ -8,7 +8,9 @@ import emailjs from 'emailjs-com';
 
 
 
-function Mail(e) {
+function Mail(e) { 
+  
+  {/* --- METHOD TO SEND THE MAIL --- */}
   function sendEmail(e){
     e.preventDefault();
     emailjs.sendForm('gmail', 'template_bg89aih', e.target, 'PwhIRcAYGXwgT5gG1')
@@ -17,8 +19,8 @@ function Mail(e) {
       }).catch(err => console.log(err));
   }
    
-
-    {/* --- METHOD TO SEND THE MAIL --- */}
+  const { register } = useForm()
+   
     
   return (
     <>
@@ -53,13 +55,15 @@ function Mail(e) {
 
           <Row5>
           <reCaptcha />
-          <input type="radio" value="Je suis d'accord avec les conditions générales" />
+          <input type="radio" value="Je suis d'accord avec les conditions générales" className='radio' />
           <label>Je suis d'accord avec les conditions générales</label>
           </Row5>
 
           <Row6>
           <button type="submit">Envoyer</button>
-          <button type="upload">Envoyer des documents</button>
+          <label>Je souhaite joindre un document à mon message :</label>
+          <input name="image" type="file" /> 
+          <button type="upload">Joindre</button>
           </Row6>
         </form>
         </ContainForm>
@@ -82,7 +86,7 @@ const CoverMail = styled.div`
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-`
+`;
 
 const TitleMail = styled.h1`
   font-family: 'Nunito', sans-serif;
@@ -92,6 +96,38 @@ const TitleMail = styled.h1`
   text-transform: uppercase;
   text-align: center;
   padding-top: 40px;
-`
+`;
+
+const Checkmark = styled.span`
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #818181;
+    border-radius: 50%;
+    &::after {
+        content: "";
+        position: absolute;
+        display: none;
+        top: 2px;
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #4eb3ff;
+    }
+`;
+
+const Input = styled.input`
+    display: none;
+    &:checked ~ ${Checkmark} {
+        border: 1px solid #4eb3ff;
+        transition: all .25s ease-in-out;
+    }
+    &:checked ~ ${Checkmark}:after {
+        display: block;
+    }
+`;
 
 export default Mail;

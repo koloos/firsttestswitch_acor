@@ -8,7 +8,7 @@ import Evenements from './Pages/Actualites/Evenements/Evenements';
 import NotreActualite from './Pages/Actualites/NotreActualite/NotreActualite';
 import Presse from './Pages/Actualites/Presse/Presse';
 import NotreMission from './Pages/NotreMission/NotreMission';
-import Recrutement from './Pages/Recrutement';
+import Recrutement from './Pages/Recrutements/Recrutement';
 import Contact from './Pages/Contact/Contact';
 import Mail from './Pages/Mail/Mail';
 import Footer from './Components/Footer/Footer';
