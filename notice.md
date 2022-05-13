@@ -67,7 +67,7 @@ Liste des routes :
 
 La page Home.jsx est faîte des sections qui sont des composants.
 
-            function Home() {
+    function Home() {
     return (
         <>
         <Container>
