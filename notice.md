@@ -1,89 +1,53 @@
 # A.CO.R La React Web App
 #### <i>La notice</i>
 
-#### 1) Installation de ReactJS
----
+#### 1) Créer une application
+
 
     npx create-react-app acorapp
 
 #### 2) Suppression des fichiers inutiles de l'application
----
+
 
 Tout ce qui est fichiers liés à Webvitalis, test, styles par défaut
 
-#### 3) Préparation structure
+#### 3) Démarrer l'application acor
 
-<u>Structure</u> : dans le dossier "src" créer le dossier Components et Pages ou autres dossiers, comme par exemple j'ai créer le dossier Accueil avec tous les components liés à la page Accueil dedans.
+    npm start
 
-    ->src
-    ->Components
-            ->Navbar
-                ->Navbar.jsx
-                ->NavbarStyle.jsx
-            ->Footer
-                ->Footer.jsx
-                ->FooterStyle.jsx
-        ->Pages
-            ->Home
-        ->Accueil
-            ->Components
+
+#### 4) Diagramme de séquence qui explique le fonctionnement de l'application
+
+![Diagramme de séquence](./public/maquette/SequenceDiagram_acor.jpg "Diagramme de séquence")
+
+#### 5) Charte graphique
+
+![Charte graphique - logo et couleurs](./public/maquette/rcg01.png)
+
+![Charte graphisque - Polices et tailles](./public/maquette/rcg02.png)
 
 
 
+#### 6) Versions
 
-    export const GlobalStyle = createGlobalStyle`
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Lato', sans-serif;
-            user-select: none;
-        }
-    `
-++
-#### 4) Création fichiers Navbar et Footer
----
+ReactJS : 18.1
+NPM utilisé en développement : 8.11
+React-router-dom : 6.3
+Styled Components : 5.3.5
+React Hook Form : 7.30
+React-icons : 4.3.1 
 
-#### 5) Création des routes dans App.js
----
 
-Liste des routes :
+#### 4) Liens
 
-    Nom : chemin de la route
+Maquette sur Figma : https://www.figma.com/file/qArBGRqGnnhNorsHlOeFGM/Site-Internet-A.CO.R
+Repository Github version test : https://github.com/koloos/firsttestswitch_acor
+Site officiel ReactJS : https://fr.reactjs.org/docs/getting-started.html
+Site officiel Npm : https://docs.npmjs.com/
+Site officiel Styled Components : https://styled-components.com/docs
+Site officiel React Hook Form : https://react-hook-form.com/get-started
+Site officiel EmailJS : https://www.emailjs.com/docs/
 
-    Accueil : "/"
-    Actualités : "/actualites"
-        Evènement : "/actualites/evenement
-        Presse : "/actualites/presse"
-        Blog : "/actualites/blog"
-    Notre Mission : "/notremission"
-    Rejoignez-nous : "/recrutement"
-    Nos contacts : "/contact"
-    Contactez-nous : "/mail"
-    Notre Histoire : "/notrehistoire
 
-#### 6) Création page Home avec style
----
 
-La page Home.jsx est faîte des sections qui sont des composants.
 
-    function Home() {
-    return (
-        <>
-        <Container>
-            <CoverHome />
-            <Citation>
-            "Chaque personne a sa place dans la société, nous aidons à la
-            trouver."
-            </Citation>
-            <Territoire />
-            <NotreMissionSection />
-            <Actualites />
-        <AccueilChiffres />
-        </Container>
-        </>
-    )
-    }
-
-#### 7) Components
----
